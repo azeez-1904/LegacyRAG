@@ -1,0 +1,11 @@
+# LegacyRAG dependencies
+# Python 3.12, Ubuntu 24.04
+# NVIDIA Quadro K4200 x2 (4GB VRAM each)
+# llama.cpp server on port 8080 (phi3-mini, Vulkan backend)
+# ollama with nomic-embed-text on port 11434
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+httpx>=0.27.0
+numpy>=1.26.0
+pydantic>=2.7.0

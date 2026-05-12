@@ -1,0 +1,4 @@
+request_id,timestamp,embed_latency_s,retrieve_latency_s,generate_latency_s,total_latency_s,prompt_tokens,completion_tokens,tokens_per_sec,embed_device,top_k,chunks_retrieved,gpu0_free_mb_before,gpu1_free_mb_before,gpu0_free_mb_after,gpu1_free_mb_after
+1,2026-05-11T14:41:50.005066+00:00,0.6253,0.0002,575.2495,575.8939,459,512,0.89,gpu,3,3,1539.0,1994.0,1550.0,1994.0
+2,2026-05-11T14:42:58.855548+00:00,0.8345,0.0002,307.6774,308.53,459,512,1.66,gpu,3,3,1515.0,1994.0,1550.0,1994.0
+3,2026-05-11T14:52:43.757793+00:00,0.5112,0.0001,525.2333,525.7631,459,150,0.29,gpu,3,3,1551.0,1994.0,1474.0,1994.0

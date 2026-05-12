@@ -1,0 +1,44 @@
+# Runtime logs and scheduler output
+*.log
+*.jsonl
+nohup.out
+
+# Generated vector store (rebuilt on ingest)
+vector_store.npz
+vector_store_meta.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# llama.cpp source tree and binaries (too large, not part of the RAG code)
+llama.cpp/
+llama-*.zip
+
+# Model blobs (never commit model weights)
+*.gguf
+*.bin
+*.ggml
+/usr/share/ollama/
+
+# Environment
+.env
+.env.*
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

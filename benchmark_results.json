@@ -1,0 +1,134 @@
+[
+  {
+    "timestamp": "2026-05-11T14:41:50.005066+00:00",
+    "question_preview": "How many days does Newark have to respond to an OPRA request, and what happens i",
+    "latency": {
+      "embed_s": 0.6253,
+      "retrieve_s": 0.0002,
+      "generate_s": 575.2495,
+      "total_s": 575.8939
+    },
+    "tokens": {
+      "prompt": 459,
+      "completion": 512,
+      "per_sec": 0.89
+    },
+    "embed_device": "gpu",
+    "retrieval": {
+      "top_k": 3,
+      "chunks_retrieved": 3
+    },
+    "vram_before": [
+      {
+        "gpu": 0,
+        "free_mb": 1539.0,
+        "used_mb": 2495.0
+      },
+      {
+        "gpu": 1,
+        "free_mb": 1994.0,
+        "used_mb": 2043.0
+      }
+    ],
+    "vram_after": [
+      {
+        "gpu": 0,
+        "free_mb": 1550.0,
+        "used_mb": 2484.0
+      },
+      {
+        "gpu": 1,
+        "free_mb": 1994.0,
+        "used_mb": 2043.0
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-05-11T14:42:58.855548+00:00",
+    "question_preview": "How many days does Newark have to respond to an OPRA request, and what happens i",
+    "latency": {
+      "embed_s": 0.8345,
+      "retrieve_s": 0.0002,
+      "generate_s": 307.6774,
+      "total_s": 308.53
+    },
+    "tokens": {
+      "prompt": 459,
+      "completion": 512,
+      "per_sec": 1.66
+    },
+    "embed_device": "gpu",
+    "retrieval": {
+      "top_k": 3,
+      "chunks_retrieved": 3
+    },
+    "vram_before": [
+      {
+        "gpu": 0,
+        "free_mb": 1515.0,
+        "used_mb": 2519.0
+      },
+      {
+        "gpu": 1,
+        "free_mb": 1994.0,
+        "used_mb": 2043.0
+      }
+    ],
+    "vram_after": [
+      {
+        "gpu": 0,
+        "free_mb": 1550.0,
+        "used_mb": 2484.0
+      },
+      {
+        "gpu": 1,
+        "free_mb": 1994.0,
+        "used_mb": 2043.0
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-05-11T14:52:43.757793+00:00",
+    "question_preview": "How many days does Newark have to respond to an OPRA request, and what happens i",
+    "latency": {
+      "embed_s": 0.5112,
+      "retrieve_s": 0.0001,
+      "generate_s": 525.2333,
+      "total_s": 525.7631
+    },
+    "tokens": {
+      "prompt": 459,
+      "completion": 150,
+      "per_sec": 0.29
+    },
+    "embed_device": "gpu",
+    "retrieval": {
+      "top_k": 3,
+      "chunks_retrieved": 3
+    },
+    "vram_before": [
+      {
+        "gpu": 0,
+        "free_mb": 1551.0,
+        "used_mb": 2483.0
+      },
+      {
+        "gpu": 1,
+        "free_mb": 1994.0,
+        "used_mb": 2043.0
+      }
+    ],
+    "vram_after": [
+      {
+        "gpu": 0,
+        "free_mb": 1474.0,
+        "used_mb": 2560.0
+      },
+      {
+        "gpu": 1,
+        "free_mb": 1994.0,
+        "used_mb": 2043.0
+      }
+    ]
+  }
+]

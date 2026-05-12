@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-05-11T15:32:28.705076+00:00",
+  "config": {
+    "n_concurrent": 3,
+    "max_tokens_per_request": 128
+  },
+  "batch_wall_time_s": 1800.79,
+  "aggregate_throughput_tok_s": 0.0,
+  "requests": {
+    "total": 3,
+    "succeeded": 0,
+    "failed": 3
+  },
+  "tokens_per_sec": {
+    "mean": 0.0,
+    "min": 0,
+    "max": 0
+  },
+  "latency_s": {
+    "mean": 0.0,
+    "min": 0,
+    "max": 0
+  },
+  "scheduler": {
+    "total_decisions": 3,
+    "gpu_decisions": 3,
+    "cpu_decisions": 0,
+    "cpu_fallback_rate_pct": 0.0
+  },
+  "vram_delta_mb": {
+    "gpu0_delta_mb": 280.0,
+    "gpu1_delta_mb": 5.0
+  },
+  "vram_before_mb": {
+    "gpu0": 1727.0,
+    "gpu1": 1998.0
+  },
+  "vram_after_mb": {
+    "gpu0": 1447.0,
+    "gpu1": 1993.0
+  },
+  "per_request": [
+    {
+      "request_id": 1,
+      "question_preview": "How many days does Newark have to respond to an OPRA request",
+      "error": "Generation failed after 3 attempts: No first token within 600.0s \u2014 server unresponsive or overloaded"
+    },
+    {
+      "request_id": 2,
+      "question_preview": "What records are exempt from OPRA disclosure in Newark?",
+      "error": "Generation failed after 3 attempts: No first token within 600.0s \u2014 server unresponsive or overloaded"
+    },
+    {
+      "request_id": 3,
+      "question_preview": "How many OPRA requests did Newark receive in fiscal year 202",
+      "error": "Generation failed after 3 attempts: No first token within 600.0s \u2014 server unresponsive or overloaded"
+    }
+  ]
+}
