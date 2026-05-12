@@ -1,6 +1,8 @@
-# Runtime logs and scheduler output
+# Runtime logs
 *.log
-*.jsonl
+
+# Generic JSONL logs — keep named research data files
+legacyrag.log
 nohup.out
 
 # Generated vector store (rebuilt on ingest)
