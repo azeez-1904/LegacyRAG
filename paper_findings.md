@@ -23,6 +23,8 @@
 
 ## 2. Baseline Benchmark — 3 Sequential Requests
 
+![Latency Breakdown](graphs/latency_breakdown.png)
+
 All requests used the same question against a 5-chunk Newark OPRA document.
 
 | # | Embed (s) | Retrieve (s) | Generate (s) | Total (s) | Prompt tok | Completion tok | tok/s | Embed Device |
@@ -40,9 +42,13 @@ All requests used the same question against a 5-chunk Newark OPRA document.
 
 **Key result:** Generation completely dominates. Embedding and retrieval are negligible.
 
+![Tokens per Second](graphs/tokens_per_second.png)
+
 ---
 
 ## 3. VRAM Scheduler Decisions
+
+![Scheduler Decisions](graphs/scheduler_decisions.png)
 
 Total decisions logged: **7**
 
@@ -118,6 +124,8 @@ nomic-embed-text via Ollama: **0.51–0.83 seconds per query** (768-dim vectors,
 ---
 
 ## 6. Dual-GPU Optimization Results
+
+![VRAM Usage](graphs/vram_usage.png)
 
 ### 6.1 Layer Split Configuration
 ```
