@@ -1,5 +1,9 @@
 # LegacyRAG
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
+[![arXiv](https://img.shields.io/badge/arXiv-preprint-red.svg)](https://arxiv.org/)
+
 A VRAM-aware Retrieval-Augmented Generation pipeline designed for legacy GPU hardware. Built for a research paper on inference constraints with dual NVIDIA Quadro K4200 GPUs (4 GB VRAM each) running llama.cpp via the Vulkan backend.
 
 ## What It Does
@@ -139,4 +143,21 @@ stress_test_results.json
 
 ## Research Context
 
-This system was built to document real-world inference performance on legacy data-center GPUs (Quadro K4200, EOL 2019) as part of an IEEE Edge computing research paper. The goal is to characterize what RAG pipelines are feasible on hardware that institutions may still have deployed — and where the actual bottlenecks lie.
+This system was built to document real-world inference performance on legacy data-center GPUs (Quadro K4200, EOL 2019) as part of an arXiv research paper on edge inference constraints. The goal is to characterize what RAG pipelines are feasible on hardware that institutions may still have deployed — and where the actual bottlenecks lie.
+
+## Citation
+
+If you use LegacyRAG in your research, please cite:
+
+```bibtex
+@misc{legacyrag2026,
+  title   = {LegacyRAG: VRAM-Aware Retrieval-Augmented Generation on Legacy GPU Hardware},
+  author  = {Azeez},
+  year    = {2026},
+  url     = {https://github.com/azeez-1904/LegacyRAG}
+}
+```
+
+## License
+
+MIT — see [LICENSE](LICENSE).
