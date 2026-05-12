@@ -91,7 +91,15 @@ LD_LIBRARY_PATH=build/bin build/bin/llama-server \
 
 ## Benchmark Results
 
-See [`paper_findings.md`](paper_findings.md) for the full research summary. Highlights:
+See [`paper_findings.md`](paper_findings.md) for the full research summary.
+
+### Latency Breakdown
+![Latency Breakdown](graphs/latency_breakdown.png)
+
+Generation dominates at **99.86% of total latency**. Embedding (0.6–0.8s) and retrieval (0.0002s) are negligible.
+
+### Generation Speed — Single GPU vs Dual-GPU
+![Tokens per Second](graphs/tokens_per_second.png)
 
 | Config | Prefill tok/s | Decode tok/s |
 |---|---|---|
@@ -99,7 +107,17 @@ See [`paper_findings.md`](paper_findings.md) for the full research summary. High
 | Single GPU (sustained load) | 1–6 | 0.29–1.66 |
 | Dual GPU (idle, layer split) | **0.52** | **8.35** |
 
-**Key finding:** Dual-GPU Vulkan layer split on Maxwell hardware degrades prefill by 50× due to inter-device synchronization overhead, while decode speed is unchanged. The VRAM scheduler's CPU fallback correctly prevented OOM conditions throughout all tests. Concurrent generation requests queue serially — the hardware ceiling is strictly 1 request at a time.
+**Key finding:** Dual-GPU Vulkan layer split on Maxwell hardware degrades prefill by 50× due to inter-device synchronization overhead, while decode speed is unchanged.
+
+### VRAM Usage Per Request
+![VRAM Usage](graphs/vram_usage.png)
+
+Both GPUs stayed well above the 800 MB threshold throughout all tests. The VRAM scheduler never triggered a CPU fallback during the baseline runs.
+
+### VRAM Scheduler Decisions
+![Scheduler Decisions](graphs/scheduler_decisions.png)
+
+All 7 embedding decisions routed to GPU. Free VRAM remained stable between 1,400–2,000 MB across both cards.
 
 ## Files
 
